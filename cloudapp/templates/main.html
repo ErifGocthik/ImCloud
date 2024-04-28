@@ -1,0 +1,23 @@
+{% extends 'root.html' %}
+{% load static %}
+{% block content %}
+    <div class="content-images">
+        <div class="search-filter">
+            <form action="." method="get">
+                <input type="search" name="search" placeholder=" Поиск по названию" style="background-image: url('{% static 'icons/magnifying-glass.png' %}')">
+                <input type="submit" value="Поиск">
+            </form>
+            <p style="background-image: url('{% static 'icons/setting.png' %}')"></p>
+            <p style="background-image: url('{% static 'icons/downloads.png' %}')"></p>
+        </div>
+        <div class="images">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('{% static 'icons/YsLK_igrOu0.jpg' %}')">
+                <div class="title">TITLE/НАЗВАНИЕ</div>
+                <div class="img-info">
+                    <p>500 × 500 <img src="{% static 'icons/maximize.png' %}" alt=""></p>
+                    <p>3.14 Mb <img src="{% static 'icons/pie-chart.png' %}" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

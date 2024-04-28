@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/cloud.css' %}">
+    <title>Cloud</title>
+    <script src="{% static 'js/jQuery.js' %}"></script>
+    <script src="{% static 'js/passiveNavigationSlider.js' %}"></script>
+</head>
+<body>
+    <div class="navigation">
+        <a href="#" class="nav-btn"><img src="" alt=""></a>
+        <a href="#" class="nav-btn"><img src="{% static 'icons/Premuim-иконка.png' %}" alt=""></a>
+        <a href="#" class="nav-btn"><img src="{% static 'icons/Архив-иконка.png' %}" alt=""></a>
+        <a href="#" class="nav-btn href-active"><img src="{% static 'icons/Облако-иконка.png' %}" alt=""></a>
+        <a href="#" class="nav-btn"><img src="{% static 'icons/Пользователь-иконка.png' %}" alt=""></a>
+        <a href="#" class="nav-btn"><img src="{% static 'icons/Design-иконка.png' %}" alt=""></a>
+        <a href="#" class="nav-btn"><img src="" alt=""></a>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
